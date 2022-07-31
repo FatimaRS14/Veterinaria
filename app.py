@@ -10,10 +10,6 @@ def index():
     return render_template('/index.html')
  
 
-@app.route('/acerca_de')
-def acerca_de():
-    return render_template('acerca.html')
-
 @app.route('/productos')
 def productos():
     return render_template('productos.html')
