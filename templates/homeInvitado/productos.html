@@ -5,122 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Grape+Nuts&family=Indie+Flower&family=Permanent+Marker&family=Roboto+Flex:opsz,
+    wght@8..144,200;8..144,400;8..144,600;8..144,900;8..144,1000&family=Roboto+Slab:wght@300;400;800&family=Roboto:wght@300&family=Rubik:ital,wght@0,300;0,600;1,800&family=Secular+One&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static">
+
+    <style>
+
+      *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      header{
+        
+        background-image: url('../img/logo.jpg');
+        background-color: #f5f3ee;
+        position: relative;
+        height: 300px
+      }
+
+      #logo{
+        margin: auto;
+        height: 250px;
+        width: 320px;
+        text-align: center;
+      }
+
+      #logo h1{
+         font-family: 'Dongle';
+         font-size: 58px;
+         text-align: left;
+       }
+
+     nav ul{
+        list-style: none;
+        display: inline-block;
+        padding:18px;
+     }
+
+     nav ul li{
+         float: left;
+         margin-top: 20px;
+     }
+
+     nav ul li a {
+         color: rgb(5, 4, 0);
+         font-weight: bold;
+         text-decoration: none;
+         font-size: 20px;
+         padding: 18px;
+         text-align: right;
+        
+       
+
+     }
+
+     nav ul li a:hover{
+       background-color: #97e1f8;
+       border: 2px solid #97e1f8; 
+       border-radius: 5px;
+       text-align: right;
+     }
+
+   </style>
+    
 </head>
 <body>
 
-   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container2">
-      <a class="produc" href="productos.html">Productos</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menú
-        <i class="fa fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="acerca.html">Acerca de</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactos.html">Contactos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Servicios</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-   <header class="produc" style="background-image: url('img/home-bg.jpg')">
-    <div class="overlay1"></div>
-    <div class="container2">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Productos</h1>
-            <span class="subheading">Contamos con una amplia variedad de productos para la salud de sus animales</span>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+       
+        
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>         
+              <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contactos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+
+      <header>
+        <div id="logo">
+          <img src="vet" url="../img" alt="veterinaria">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <div class="site-heading">
+                <h1>Productos</h1>
+                <span class="subheading">Contamos con una amplia gama de medicamentos para sus animales
+                  asi como accesorios
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
     <section class="ProductsSection">
         <main class="mainDestacados">
           <h2>Catalogo deproductos</h2>
           <section class="containerProdutos">
             <div class="produto">
-                <img src="images/Novidades/Novidade1.jpg" alt="" class="produto__img">
-              <div class="productDescription">
-                <h3 class="produto__title">Novidade 1</h3>
-                <spam class="produto__price">$90.00</spam>
+              <div class="w3-card-12 w3-margin" style="width:50%">
+                <img src="img/ferrajet-hierro-vitaminas-minerales.jpg" alt="Norway" style="width:100%">
+                <div class="w3-container w3-center">
+                  <p>Ferrajet 50 ml</p>
+                </div>
               </div>
-              <a href=""><i class="produto__icon fas fa-cart-plus"></i></a>
-            </div>
-            <div class="produto">
-                <img src="images/Novidades/Novidade2.jpg" alt="" class="produto__img">
-              <div class="productDescription">
-                <h3 class="produto__title">Novidade 2</h3>
-                <spam class="produto__price">$90.00</spam>
-              </div>
-              <a href=""><i class="produto__icon fas fa-cart-plus"></i></a>
-            </div>
-            <div class="produto">
-                <img src="images/Novidades/Novidade3.jpg" alt="" class="produto__img">
-              <div class="productDescription">
-                <h3 class="produto__title">Novidade 3</h3>
-                <spam class="produto__price">$90.00</spam>
-              </div>
-              <a href=""><i class="produto__icon fas fa-cart-plus"></i></a>
-            </div>
-            <div class="produto">
-                <img src="images/Novidades/Novidade4.jpg" alt="" class="produto__img">
-             <div class="productDescription">
-              <h3 class="produto__title">Novidade 4</h3>
-              <spam class="produto__price">$90.00</spam>
-              </div>
-              <a href=""><i class="produto__icon fas fa-cart-plus"></i></a>
-            </div>
-            <div class="produto">
-              <img src="images/Novidades/Novidade5.jpg" alt="" class="produto__img">
-            <div class="productDescription">
-              <h3 class="produto__title">Novidade 5</h3>
-              <spam class="produto__price">$90.00</spam>
-            </div>
-            <a href=""><i class="produto__icon fas fa-cart-plus"></i></a>
-          </div>
-          <div class="produto">
-              <img src="images/Novidades/Novidade6.jpg" alt="" class="produto__img">
-            <div class="productDescription">
-              <h3 class="produto__title">Novidade 6</h3>
-              <spam class="produto__price">$90.00</spam>
-            </div>
-            <a href=""><i class="produto__icon fas fa-cart-plus"></i></a>
-          </div>
-          <div class="produto">
-              <img src="images/Novidades/Novidade7.jpg" alt="" class="produto__img">
-            <div class="productDescription">
-              <h3 class="produto__title">Novidade 7</h3>
-              <spam class="produto__price">$90.00</spam>
-            </div>
-            <a href=""><i class="produto__icon fas fa-cart-plus"></i></a>
-          </div>
-          <div class="produto">
-              <img src="images/Novidades/Novidade8.jpg" alt="" class="produto__img">
-           <div class="productDescription">
-              <h3 class="produto__title">Novidade 8</h3>
-              <spam class="produto__price">$90.00</spam>
-            </div>
-            <a href=""><i class="produto__icon fas fa-cart-plus"></i></a>
-          </div>
-          </section>
-        </main>
-      </section>
-  </header>
+
+              <div class="produto">
+                <div class="w3-card-12 w3-margin" style="width:50%">
+                  <img src="img/dexa-estreptovet.jpg" alt="Norway" style="width:100%">
+                  <div class="w3-container w3-center">
+                    <p>Dexa-estreptovet</p>
+                  </div>
+                </div>
     
 </body>
 </html>
